@@ -1,0 +1,25 @@
+{% extends 'welcome/home.html.twig' %}
+
+{% block content %}
+     {% include 'flash_messages.html.twig' %}
+    <section id="contact" class="team-bg">
+        <div class="container">
+            <div class="col-md-12 text-center">
+                <div class="section-title ">
+                    <h2>Get in Touch</h2> 
+                    <h3 class="titulo">We are available 24/7 by e-mail and phone. You can also ask a question about our services through our contact form that we regularly provide.</h3>
+                </div>
+            </div>    
+            {{form_start(our_form)}}
+            {{form_widget(our_form)}}           
+            
+            <div class="form-group row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-10">
+                    <input type="submit" value="Send" class="buton" />
+                </div>
+            </div>
+            {{form_end(our_form)}}
+        </div>
+    </section> 
+{% endblock %}
