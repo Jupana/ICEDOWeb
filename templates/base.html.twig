@@ -17,9 +17,9 @@
                 <header>        
                     <nav class="navbar theme-nav fixed-top navbar-dark fixed-top navbar-expand-lg darkHeader">
                         <div class="container">
-                        <a  class="navbar-brand navbar-brand" href="/icedoweblogo"  target="_self">                              
-                                <h4>ICEDOWeb</h4>
-                            </a>
+                        <div  class="navbar-brand navbar-brand" href="/icedoweblogo"  target="_self">                              
+                            <h4>ICEDOWeb</h4>
+                        </div>
                         <button class="navbar-brand navbar-toggler" type="button" aria-label="Toggle_navigation" aria-controls="nav-collapse" aria-expanded="false" right-alignment data-target="#navbarResponsive" data-toggle="collapse">
                             <span class="navbar-toggler-icon">
                                 <i aria-hidden="true" class="fa fa-align-justify"></i>
@@ -37,22 +37,24 @@
                                         <a class="nav-link" target="_self" href="#services">Services</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" target="_self" href="#news">Our Recent Work</a>
+                                        <a class="nav-link" target="_self" href="#news">Our Work</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" target="_self" href="#contact">Contact Us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link"  target="_self" href="{{ path('posts') }}">Blog</a>
                                     </li>
                                     <div class="dropdown active ">
                                         <a class="nav-link dropdown-toggle" type="link" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <span>Other pages</span>
                                         </a>
                                         <div class=" dropdown-menu" aria-labelledby="dropdownMenuLink" >
-                                            <a class="dropdown-item nav-item " href="#pricing" role="menuitem" target="_self">Our Princing Plans</a>
-                                            <a class="dropdown-item nav-item"  href="#priority" role="menuitem" target="_self">Our Priorities</a>
+                                            <a class="dropdown-item nav-item " href="#pricing" role="menuitem" target="_self">Princing Plans</a>
+                                            <a class="dropdown-item nav-item"  href="#priority" role="menuitem" target="_self">Priorities</a>
                                             <a class="dropdown-item nav-item"  href="#feature" role="menuitem" target="_self">Feature</a>
-                                            <a class="dropdown-item nav-item"  href="#" role="menuitem" target="_self">Page 4</a>
-                                            <a class="dropdown-item nav-item"  href="#" role="menuitem" target="_self">Page 5</a>
                                         </div>
+                                       
                                     </div>        
                                 </ul>
                             </div>
@@ -64,41 +66,8 @@
                 </div>
             </div>
             <div class="__cov-progress" style="background-color: rgb(255, 255, 255); opacity: 0; position: fixed; top: 0px; left: 0px; width: 0%; height: 2px; transition: opacity 0.6s ease 0s;"></div>    
-        </div> 
-        <!--Seccion Footer--> 
-        <section id="footer" class="theme-bg">
-            <footer>
-                <div class="container-fluid padding">
-                    <div class="row text-center ">
-                        <div class="col-md-4">
-                            <h5>Phone</h5>
-                            <hr class="light">
-                            <p>999.999.999</p>                  
-                        </div>
-                        <div class="col-md-4">
-                            <h5>Email</h5>
-                            <hr class="light">
-                            <p>icedoweb@gmail.com</p>              
-                        </div>
-                        <div class="col-md-4">
-                            <h5>Location</h5>
-                            <hr class="light">
-                            <p>C/Vilar de Donas,13,28050 Madrid</p>             
-                        </div>
-                        <div class="col-md-12">
-                            <hr class="light-100">
-                            <a href="#"><i class="fab fa-facebook"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
-                            <hr class="light-100">
-                            <h5>&copy; icedoweb.com</h5>
-                        </div>                               
-                    </div>
-                </div>
-            </footer>
-        </section>
+        </div>       
+    
         {% block javascripts %}
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>

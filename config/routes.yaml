@@ -7,8 +7,23 @@ welcome:
 contact:
     path: /contact
     controller: App\Controller\ContactController::contact
-
- 
-
-    
-    
+login:
+    path: /login
+    controller: App\Controller\RegistrationController::loginAction
+logout:
+    path: /logout
+posts:
+    path: /posts
+    controller: App\Controller\PostsController::indexAction        
+add_posts:
+    path: /posts/add
+    controller: App\Controller\PostsController::addAction
+delete_posts:
+    path: /posts/delete/{id}
+    controller: App\Controller\PostsController::deleteAction
+edit_posts:
+    path: /posts/edit/{id}
+    controller: App\Controller\PostsController::editAction
+posts_details:
+    path: /posts/detail/{id}
+    controller: App\Controller\PostsController::detailAction         

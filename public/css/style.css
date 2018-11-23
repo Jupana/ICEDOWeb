@@ -318,11 +318,11 @@ h3 {
 }
 
 h2 {
-    line-height: 28px;
+    line-height: 40px;
     font-size: 40px;
     margin-top: 50px;
-    color: #586082;
-    letter-spacing: 5px;
+    color: #33343b;
+    letter-spacing: 7px;
 }
 
 .slide h3 {
@@ -655,6 +655,66 @@ hr.light-100{
     width: 25%;
 }
 
+/*ENDSeccion Servicios  STYLE*/
+
+/*Seccion BlogNews  STYLE*/
+
+.blog-grid {
+    background: #fff;
+    box-shadow: 1px 1px 35px 0 rgba(51, 51, 51, 0.4);
+    position: relative;
+
+}
+.blog-grid img:hover {
+    width: 100%;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px #ec731e;
+    -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    
+}
+.blog-grid img {
+    width: 350px;
+    height:200px; 
+}
+
+.blog-grid-text {
+    position: relative;
+    margin-bottom: 15px;
+}
+.padding-25px-all {
+    padding: 25px;
+}
+.border {
+    border: 1px solid #cfcaff!important;
+}
+.link:hover {filter: saturate(180%);}
+
+ .heading {
+    background-color: #eaeaea; 
+  
+}
+
+.product {
+    font-size: 40px;
+} 
+.contenido{
+    margin-top:0px;
+}
+  
+.share-link {
+    display: none;
+}
+
+.texto-center{
+    font-size: 30px;
+    
+}
+  
+/*ENDSeccion BLOGNEWS STYLE*/
+
 
 /*---Media queries--*/
 
@@ -681,10 +741,13 @@ hr.light-100{
     .header-shape{
         display: none;
     }
-   
-    
-    
+    .col-lg-4 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
 
+
+   
 }
 
 
@@ -761,6 +824,11 @@ hr.light-100{
     .footer-shape {
         margin-top:178px;        
     }
+
+
+
+    
+   
  
 }
 
