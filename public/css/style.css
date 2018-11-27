@@ -24,7 +24,8 @@ body{
 }
 
 .darkHeader{
-    background:linear-gradient(to right,#191970 0%, #7FFFD4 100%);
+    /*background: linear-gradient(to right,#191970 0%, #7FFFD4 100%); Nico*/
+    background: linear-gradient(to right,#0085e2 0%, #5fb6f3 100%);
     box-shadow: 1px 1px 35px 0 rgba(51, 51, 51, 0.4);
     transition: all 0.3s ease;
 }
@@ -116,7 +117,8 @@ section{
 }
 
 .slide-bg{
-    background: linear-gradient(to right,#191970 0%, #7FFFD4 100%);
+    /*background: linear-gradient(to right,#191970 0%, #7FFFD4 100%); Nico*/
+    background: linear-gradient(to right,#0085e2 0%, #5fb6f3 100%);
     height: 700px;
     padding-bottom: 0;
     padding-top: 100px;
@@ -339,7 +341,8 @@ h2 {
 /*Seccion  Feature STYLE*/
 
 .theme-bg {
-    background: linear-gradient(to right,#191970 0%, #7FFFD4 100%);
+   /*background: linear-gradient(to right,#191970 0%, #7FFFD4 100%); Nico*/
+   background: linear-gradient(to right,#0085e2 0%, #5fb6f3 100%);
 }
 .feature .animation-circle-inverse i {
     top: 52%;
@@ -512,7 +515,8 @@ ul {
 .price-plan-btn {
     padding: 8px 0;
     width: 140px;
-    background: linear-gradient(to right,#191970 0%, #7FFFD4 100%);
+   /*background: linear-gradient(to right,#191970 0%, #7FFFD4 100%); Nico*/
+   background: linear-gradient(to right,#0085e2 0%, #5fb6f3 100%);
     font-size: 16px;
     color: #ffffff;
     cursor: pointer;
@@ -571,7 +575,8 @@ ul {
 
 /*Seccion fOOTER STYLE*/
 footer{
-    background-color: linear-gradient(to right,#191970 0%, #7FFFD4 100%);
+   /*background: linear-gradient(to right,#191970 0%, #7FFFD4 100%); Nico*/
+   background: linear-gradient(to right,#0085e2 0%, #5fb6f3 100%);
     color:#d5d5d5;
     padding-top:  2rem; 
 }
@@ -623,7 +628,7 @@ hr.light-100{
     line-height: normal;
 }
 .text-theme-color {
-    color: #4e54c8;
+    color: #0085e2;
 }
 .box-circle-large {
     left: 0;
