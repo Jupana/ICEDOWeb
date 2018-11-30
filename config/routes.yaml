@@ -1,6 +1,6 @@
 index:
     path: /
-    controller: App\Controller\ContactController::contact
+    controller: App\Controller\PostsController::indexAction        
 welcome:
     path: /welcome
     controller: App\Controller\WelcomeController::index

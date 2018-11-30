@@ -9,7 +9,7 @@
             <div class="container">
                 <h3 class="product">
                 ICEDOWeb
-                <a href="{{ path('posts') }}">Noticias</a>
+                <a href="{{ path('index') }}">Noticias</a>
                 </h3>
                 <h2><strong>{{post.title}}</strong></h2>
 
@@ -34,7 +34,7 @@
                 <p><img  class="col-lg-12" style="height:400px" src="{{ asset("uploads/"~post.image)}}"/></p> 
                <div class=" col-lg-12 texto-center"> 
                     <p>{{post.content | raw }}</strong></p>
-                    <p><a class="nav-link" href="{{ path('contact') }}">Contact Us/Know Our Services</a></p>
+                    <p><a class="nav-link" href="{{ path('index') }}">Contact Us/Know Our Services</a></p>
                 </div>    
             </div>
             

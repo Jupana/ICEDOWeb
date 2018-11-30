@@ -1,6 +1,6 @@
-{% extends 'base.html.twig' %}
+{% extends 'welcome/home.html.twig' %}
 
-{% block body %}
+{% block content %}
     {% for message in app.session.flashbag().get('status') %}
         <div class="alert alert-success">{{message}}</div>
     {% endfor %}
@@ -11,7 +11,7 @@
                 <a class="nav-link float-right"  href="{{ path('logout') }}">Salir</a>
             {% endif %}
             <br/> 
-            <h2 class="text-center">Latest Blog Posts</h2>
+            <h2 class="text-center">Our News</h2>
         </div>
         <div class="row">
             {% for post in posts %} 
@@ -25,7 +25,8 @@
                             <div class="no-margin">    
                                 <p>{{post.summary | raw}}</strong></p>
                             </div>  
-                            <p>Autor:{{ post.user.username }}</p>    
+                            <p>Autor:{{ post.user.username }}</p>  
+                            <a href="{{path("posts_details",{"id":post.id})}}">Read More</a>  
                             {% if (app.user.id is defined) and (post.user.id == app.user.id) %} 
                                 <p>
                                     <a href="{{path("delete_posts",{"id":post.id})}}" class="btn btn-danger">Delete</a>
@@ -39,28 +40,5 @@
                 <hr/> 
             {% endfor %}       
         </div>    
-    </div>
-<section class="theme-bg">    
-    <footer>
-        <div class="container-fluid padding">
-            <div class="row text-center ">
-                <div class="col-md-4">
-                    <h5>Phone</h5>
-                    <hr class="light">
-                    <p>999.999.999</p>                  
-                </div>
-                <div class="col-md-4">
-                    <h5>Email</h5>
-                    <hr class="light">
-                    <p>icedoweb@gmail.com</p>              
-                </div>
-                    <div class="col-md-4">
-                        <h5>Location</h5>
-                        <hr class="light">
-                        <p>C/Vilar de Donas,13,28050 Madrid</p>             
-                </div>                              
-            </div>
-        </div>
-    </footer>
-</section>      
+    </div>     
 {% endblock %}

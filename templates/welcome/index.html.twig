@@ -1,25 +1,61 @@
-{% extends 'welcome/home.html.twig' %}
+{% extends 'base.html.twig' %}
 
-{% block content %}
-     {% include 'flash_messages.html.twig' %}
+{% block body %}  
     <section id="contact" class="team-bg">
         <div class="container">
-            <div class="col-md-12 text-center">
-                <div class="section-title ">
-                    <h2>Get in Touch</h2> 
-                    <h3 class="titulo">We are available 24/7 by e-mail and phone. You can also ask a question about our services through our contact form that we regularly provide.</h3>
+            <div class="div">
+                <div class="col-md-12 text-center">
+                    <div class="section-title ">
+                        <h2>Get in Touch</h2> 
+                        <h3 class="titulo">We are available 24/7 by e-mail and phone. You can also ask a question about our services through our contact form that we regularly provide.</h3>
+                    </div>
+                </div>    
+                {{form_start(our_form)}}
+                {{form_widget(our_form)}}           
+                
+                <div class="form-group row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-10">
+                        <input type="submit" value="Send" class="buton"/>
+                    </div>
                 </div>
-            </div>    
-            {{form_start(our_form)}}
-            {{form_widget(our_form)}}           
-            
-            <div class="form-group row">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-10">
-                    <input type="submit" value="Send" class="buton" />
-                </div>
-            </div>
-            {{form_end(our_form)}}
+                {% include 'flash_messages.html.twig' %}
+                {{form_end(our_form)}}
+            </div>     
         </div>
     </section> 
+    <!--Seccion Footer--> 
+        <section id="footer" class="theme-bg">
+            <footer>
+                <div class="container-fluid padding">
+                    <div class="row text-center ">
+                        <div class="col-md-4">
+                            <h5>Phone</h5>
+                            <hr class="light">
+                            <p>999.999.999</p>                  
+                        </div>
+                        <div class="col-md-4">
+                            <h5>Email</h5>
+                            <hr class="light">
+                            <p>icedoweb@gmail.com</p>              
+                        </div>
+                        <div class="col-md-4">
+                            <h5>Location</h5>
+                            <hr class="light">
+                            <p>C/Vilar de Donas,13,28050 Madrid</p>             
+                        </div>
+                        <div class="col-md-12">
+                            <hr class="light-100">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <hr class="light-100">
+                            <h5>&copy; icedoweb.com</h5>
+                        </div>                               
+                    </div>
+                </div>
+            </footer>
+        </section>
 {% endblock %}
